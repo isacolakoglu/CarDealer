@@ -1,0 +1,21 @@
+.example-container mat-form-field + mat-form-field {
+  margin-left: 8px;
+}
+
+
+
+.form-control.ng-touched.ng-invalid {
+  border: 1px solid red;
+}
+
+.form-control.ng-dirty.ng-valid {
+  border: 1px solid #319831;
+}
+
+.form-select.ng-touched.ng-invalid {
+  border: 1px solid red;
+}
+
+.form-select.ng-dirty.ng-valid {
+  border: 1px solid #319831;
+}

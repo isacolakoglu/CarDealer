@@ -1,0 +1,10 @@
+
+<app-navbar></app-navbar>
+<app-header></app-header>
+
+
+<div class="background-placeholder">
+  <app-navbar *ngIf="navigate.showNavigation | async"></app-navbar>
+  <app-header *ngIf="head.showHeader | async"></app-header>
+  <router-outlet></router-outlet>
+</div>

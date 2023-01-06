@@ -1,0 +1,133 @@
+<div class="container mt-4">
+
+  <div class="ilanver container">
+
+    <div class="text-center mt-4">
+      <h1>İLAN VER</h1>
+    </div>
+
+    <form [formGroup]="ilanForm">
+      <div class="row mt-5 ms-5">
+        <div class="col-6">
+
+
+          <label class="form-label">Durum</label>
+          <select id="durumName" formControlName="durumName" class="form-select"
+                  aria-describedby="validationServer04Feedback" required>
+            <option value="" selected>Durumu seçiniz</option>
+            <option *ngFor="let state of states">{{state.state}}</option>
+          </select>
+
+
+          <label class="form-label mt-4">Kategori</label>
+          <select formControlName="kategoriName"
+                  class="form-select"
+                  (change)="changeModel()" required>
+            <option value="" selected>Aracınızın markası...</option>
+            <option *ngFor="let category of categories" [value]="category.name"> {{category.name}}</option>
+          </select>
+
+
+          <label class="form-label mt-4">Model</label>
+          <select formControlName="modelName"
+                  class="form-select" required>
+            <option value="">Modelini seçiniz...</option>
+            <option *ngFor="let model of models[0]" [value]="model.model"> {{model.model}}</option>
+          </select>
+
+
+          <label for="yearName" class="form-label mt-4">Yıl</label>
+          <select formControlName="yearName" id="yearName" class="form-select" required>
+            <option value="">Yıl seçiniz...</option>
+            <option *ngFor="let year of years">{{year.year}}</option>
+          </select>
+
+
+          <label class="form-label mt-4">Renk</label>
+          <select formControlName="colorName"
+                  class="form-select" required>
+            <option value="">Renk seçiniz...</option>
+            <option *ngFor="let color of colors">{{color.name}}</option>
+          </select>
+
+
+          <div class="form-floating mt-5">
+            <textarea formControlName="textName" class="form-control" placeholder="Leave a comment here" id="textName"
+                      style="height: 300px" required></textarea>
+            <label for="textName">Açıklama yazınız...</label>
+          </div>
+
+        </div>
+
+        <div class="col-6">
+          <div class="input-class">
+            <label for="kilometerName" class="form-label mt-4">Kilometre</label>
+            <label for="kilometerName" class="form-label mt-4 ">{{this.ilanForm.value.kilometerName}}</label>
+          </div>
+          <input id="kilometerName"
+                 formControlName="kilometerName"
+                 type="range"
+                 class="form-range"
+                 min="0" max="100000" value="10000" required>
+
+
+          <div class="input-class">
+            <label for="powerName" class="form-label mt-4">Motor Gücü</label>
+            <label for="powerName" class="form-label mt-4">{{this.ilanForm.value.powerName}}</label>
+          </div>
+          <input id="powerName"
+                 formControlName="powerName"
+                 min="0" max="700" value="100"
+                 type="range"
+                 class="form-range" required>
+
+
+          <div class="input-class">
+            <label for="volumeName" class="form-label mt-4">Motor Hacmi</label>
+            <label for="volumeName" class="form-label mt-4">{{this.ilanForm.value.volumeName}}</label>
+          </div>
+
+          <input id="volumeName"
+                 formControlName="volumeName"
+                 min="0" max="4000" value="100"
+                 type="range"
+                 class="form-range" required>
+
+
+          <div>
+            <label for="formFile" class="form-label mt-4">Aracınızın resmini girin</label>
+            <input id="formFile"
+                   type="text"
+                   name="formFile"
+                   class="form-control"
+                   formControlName="fileName" required>
+
+
+          </div>
+
+
+          <label for="priceName" class="form-label mt-4">Fiyat</label>
+          <input id="priceName"
+                 formControlName="priceName"
+                 class="form-control"
+                 type="text" value=""
+                 aria-label="readonly input example" required>
+
+
+          <div class="mt-5 text-center">
+            <button class="btn btn-warning text-center"
+                    type="button"
+                    [disabled]="ilanForm.invalid"
+                    (click)="onIlan()">
+              <img src="favicon.ico" alt="İlan resmi">
+              <a>
+                İLAN VER
+              </a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  <hr>
+</div>

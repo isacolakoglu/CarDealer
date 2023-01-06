@@ -1,0 +1,29 @@
+<div class="flex-shrink-0 bg-white mt-3 ms-3" style="width: 250px;">
+  <a class="d-flex align-items-center pb-2 mb-1 link-dark text-decoration-none border-bottom">
+    <img class="brand" src="assets/brand/i-car.svg" width="80" height="30">
+    <span class="fs-5">Rent&Buy</span>
+  </a>
+
+
+  <ul class="list-unstyled ps-0">
+    <li class="mb-1" *ngFor="let state of states">
+      <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0"
+              routerLink="{{state.path}}"
+              (click)="getCollapse(state.name)"><!--[attr.data-bs-target]="'#' + state.id"-->
+        {{state.name}}
+      </button>
+
+
+<!--        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small collapse"-->
+<!--            [ngClass]="{'show': state.path == category.state}" *ngFor="let category of state.categories">     -->
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small collapse"
+            [ngClass]=" state.path == category.state ? 'show':'hidden'" *ngFor="let category of state.categories">
+          <li>
+            <a routerLink="{{state.path}}/{{category.category}}"
+                class="link-dark d-inline-flex text-decoration-none rounded">{{category.category}}
+            </a>
+          </li>
+        </ul>
+    </li>
+  </ul>
+</div>

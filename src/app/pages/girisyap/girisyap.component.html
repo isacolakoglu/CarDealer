@@ -1,0 +1,66 @@
+<main class="form-signin w-100 m-auto text-center">
+  <form [formGroup]="loginForm" (ngSubmit)="OnLogin()">
+    <img class="mb-4" src="./assets/brand/i-car.svg" alt="" width="310" height="200">
+    <h1 class="h3 mb-3 fw-normal">Lütfen giriş yapın</h1>
+
+    <div class="form-floating mb-3">
+      <input formControlName="email"
+             type="email"
+             class="form-control"
+             id="floatingInput">
+      <label for="floatingInput">E-mail</label>
+
+      <div
+        *ngIf="loginForm.get('email').touched && loginForm.get('email').invalid" style="color: #FF0000FF">
+
+        <div *ngIf="loginForm.get('email')?.hasError('required')">
+          Email Zorunludur
+          <i class="fa-regular fa-circle-xmark"></i>
+        </div>
+
+        <div *ngIf="loginForm.get('email')?.hasError('email')">
+          Lutfen Doğru Format Giriniz, örn; name@example.com
+          <i class="fa-regular fa-circle-xmark"></i>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="form-floating mb-3">
+      <input formControlName="password"
+             type="password"
+             class="form-control"
+             id="floatingPassword"
+             placeholder="Password">
+      <label for="floatingPassword">Şifre</label>
+
+      <div *ngIf="loginForm.get('password').touched && loginForm.get('password').invalid" style="color: #FF0000FF">
+
+      <div *ngIf="loginForm.get('password')?.hasError('required')">
+        Şifre Zorunludur
+        <i class="fa-regular fa-circle-xmark"></i>
+      </div>
+
+      </div>
+    </div>
+
+    <!--    <div class="checkbox mb-3">-->
+    <!--      <label>-->
+    <!--        <input-->
+    <!--          type="checkbox"-->
+    <!--          formControlName="acceptTerms"-->
+    <!--          value="remember-me"> Beni hatırla-->
+    <!--      </label>-->
+    <!--    </div>-->
+
+    <button
+      class="w-100 btn btn-lg btn-dark"
+      type="submit"
+      [disabled]="loginForm.invalid">
+      <a>Giriş Yap</a>
+    </button>
+
+    <p class="mt-5 mb-3 text-muted">© 2022–2023</p>
+  </form>
+</main>

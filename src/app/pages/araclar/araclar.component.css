@@ -1,0 +1,12 @@
+.container-fluid{
+  background: #f7ff00;
+  background: -webkit-linear-gradient(to right, #2c282a, #a19999);
+  background: linear-gradient(to right, #1c1a1b, #9ea19d);
+  height: 200vh;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}

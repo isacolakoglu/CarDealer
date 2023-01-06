@@ -1,0 +1,29 @@
+.album {
+  background: #f7ff00;
+  background: -webkit-linear-gradient(to right, #7e7e7e, #4d4d4d);
+  background: linear-gradient(to right, #7e7e7e, #4d4d4d);
+}
+
+
+.card {
+  height: 100%;
+  width: 100%;
+  background: -webkit-linear-gradient(to right, #949494, #4d4d4d);
+  background: linear-gradient(to right, #949494, #4d4d4d);
+}
+
+.image {
+  height: auto;
+  width: auto;
+}
+
+.card-text {
+  height: 100px;
+  width: auto;
+}
+
+.btn {
+  background: -webkit-linear-gradient(to right, #7c7c7c, #ffffff);
+  background: linear-gradient(to right, #7c7c7c, #ffffff);
+  color: #505000;
+}

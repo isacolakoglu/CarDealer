@@ -1,0 +1,27 @@
+.container {
+
+  background: -webkit-linear-gradient(to right, #7e7e7e, #363636);
+  background: linear-gradient(to right, #7e7e7e, #363636);
+  border-radius: 50px;
+}
+
+.ilanver {
+
+}
+
+
+.btn {
+  background-color: deepskyblue;
+  border-color: deepskyblue;
+  margin-top: 30px;
+  width: 350px;
+  border-radius: 30px;
+  font-size: 50px;
+  padding: 25px;
+}
+.input-class{
+  display: flex;
+  justify-content: space-between;
+}
+
+

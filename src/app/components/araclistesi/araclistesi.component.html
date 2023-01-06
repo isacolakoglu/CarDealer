@@ -1,0 +1,75 @@
+<div class="container-fluid">
+  <ng-template #carList let-cars="cars">
+    <div class="container-fluid mt-3">
+      <div class="row">
+        <mat-card class="example-card mb-5" *ngFor="let cardata of cars">
+          <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title>
+              {{cardata.userName | titlecase }}
+            </mat-card-title>
+            <mat-card-subtitle>{{cardata.firstName}} {{cardata.lastName}}</mat-card-subtitle>
+          </mat-card-header>
+          <img class="image" mat-card-image src="{{cardata.imageUrl}}" alt="Image">
+          <mat-card-content>
+            <div class="desc container">
+              <p class="description">
+                {{cardata.description | truncate:[25, '...']}}
+              </p>
+            </div>
+          </mat-card-content>
+
+
+          <ul class="listem">
+            <hr>
+            <li class="list-group-item">Marka: {{cardata.category}}</li>
+            <hr>
+            <li class="list-group-item">Model: {{cardata.model}}</li>
+            <hr>
+            <li class="list-group-item">Fiyat: {{cardata.price}}</li>
+            <hr>
+            <li class="list-group-item">Yıl: {{cardata.year}}</li>
+            <hr>
+            <li class="list-group-item">Durum: {{cardata.state}}</li>
+            <hr>
+          </ul>
+
+
+          <mat-card-actions>
+            <button *ngIf="isMod || isAdmin" mat-button>KALDIR</button>
+<!--            <button mat-button routerLink="'Araclar/' + {{cardata.state}}/{{cardata.category}}/{{cardata.id}}">İNCELE</button>-->
+            <button mat-button (click)="incele(cardata)">İNCELE</button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+    </div>
+  </ng-template>
+</div>
+
+<div *ngIf="cars.length>0">
+  <ng-template [ngTemplateOutlet]="carList" [ngTemplateOutletContext]="{cars: cars}"></ng-template>
+</div>
+
+<div *ngIf="(!cars || cars.length == 0)" class="alert alert-warning">
+  Mevcut değil. Dilerseniz ilan verip aracınızı listeye ekleyebilirsiniz.
+</div>
+
+
+<!--<div class="card" style="width: 18rem;">-->
+<!--  <img src="./assets/carousel/." class="card-img-top" alt="...">-->
+<!--  <div class="card-body">-->
+<!--    <h5 class="card-title">Card title</h5>-->
+<!--    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
+<!--  </div>-->
+<!--  <ul class="list-group list-group-flush">-->
+<!--    <li class="list-group-item">An item</li>-->
+<!--    <li class="list-group-item">A second item</li>-->
+<!--    <li class="list-group-item">A third item</li>-->
+<!--  </ul>-->
+<!--  <div class="card-body">-->
+<!--    <a href="#" class="card-link">Card link</a>-->
+<!--    <a href="#" class="card-link">Another link</a>-->
+<!--  </div>-->
+<!--</div>-->
+
+

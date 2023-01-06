@@ -1,0 +1,369 @@
+<div class="container mt-5">
+  <form class="row g-3" [formGroup]="registerForm">
+
+    <img class="mb-4" src="./assets/brand/i-car.svg" alt="" width="125" height="90">
+    <h1 class="hesapolustur text-center">HESAP OLUŞTUR</h1>
+
+    <div class="alert alert-danger" *ngIf="error">
+      {{ error }}
+    </div>
+
+    <div class="col-md-2">
+      <label class="form-label" for="firstName">Ad</label>
+      <div class="input-group has-validation">
+        <span class="input-group-text">
+          <i class="fa-solid fa-user"></i>
+        </span>
+        <input formControlName="firstName"
+               type="text"
+               class="form-control"
+               id="firstName"
+               placeholder="Ad"
+               required>
+      </div>
+
+      <div *ngIf="registerForm.get('firstName').touched && registerForm.get('firstName').invalid"
+           style="color: #FF0000FF">
+        <div *ngIf="registerForm.get('firstName')?.hasError('required')">
+          Ad Zorunludur
+          <i class="fa-regular fa-circle-xmark"></i>
+        </div>
+        <div *ngIf="registerForm.get('firstName')?.hasError('minlength')">
+          En az 2 karakter olmalıdır
+          <i class="fa-regular fa-circle-xmark"></i>
+        </div>
+      </div>
+
+      <div *ngIf="registerForm.get('firstName').valid" style="color: #319831">
+        <div *ngIf="registerForm.get('firstName')?.dirty">
+          Başarılı
+          <i class="fa-solid fa-check"></i>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-md-2">
+      <label class="form-label" for="lastName">Soyad</label>
+      <div class="input-group has-validation">
+        <span class="input-group-text">
+          <i class="fa-solid fa-users"></i>
+        </span>
+        <input formControlName="lastName"
+               type="text"
+               name="lastName"
+               class="form-control"
+               id="lastName"
+               placeholder="Soyad">
+      </div>
+
+
+      <div *ngIf="registerForm.get('lastName').touched && registerForm.get('lastName').invalid"
+           style="color: #FF0000FF">
+        <div *ngIf="registerForm.get('lastName')?.hasError('required')">
+          Soyad Zorunludur
+          <i class="fa-regular fa-circle-xmark"></i>
+        </div>
+      </div>
+
+      <div *ngIf="registerForm.get('lastName').valid" style="color: #319831">
+        <div *ngIf="registerForm.get('lastName')?.dirty">
+          Başarılı
+          <i class="fa-solid fa-check"></i>
+        </div>
+      </div>
+
+
+    </div>
+
+
+    <div class="col-md-2">
+      <label class="form-label">Kullanıcı Adı</label>
+      <div class="input-group has-validation">
+        <span class="input-group-text">
+          @
+        </span>
+        <input formControlName="userName"
+               type="text"
+               class="form-control"
+               aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback"
+               placeholder="Kullanıcı Adı" required>
+      </div>
+
+      <div *ngIf="registerForm.get('userName').touched && registerForm.get('userName').invalid"
+           style="color: #FF0000FF">
+        <div *ngIf="registerForm.get('userName')?.hasError('required')">
+          Kullanıcı adı zorunludur
+          <i class="fa-regular fa-circle-xmark"></i>
+        </div>
+        <div *ngIf="registerForm.get('userName')?.hasError('minlength')">
+          En az 4 karakter olmalıdır
+          <i class="fa-regular fa-circle-xmark"></i>
+        </div>
+      </div>
+
+      <div *ngIf="registerForm.get('userName').valid" style="color: #319831">
+        <div *ngIf="registerForm.get('userName')?.dirty">
+          Başarılı
+          <i class="fa-solid fa-check"></i>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-md-2">
+      <label class="form-label">Şehir</label>
+      <div class="input-group has-validation">
+        <span class="input-group-text">
+          <i class="fa-solid fa-city"></i>
+        </span>
+        <select formControlName="cityName"
+                class="form-select"
+                aria-describedby="validationServer04Feedback">
+          <option value="">Şehrinizi seçiniz...</option>
+          <option *ngFor="let city of cities"> {{city.name}}</option>
+        </select>
+      </div>
+
+      <div *ngIf="registerForm.get('cityName').touched && registerForm.get('cityName').invalid"
+           style="color: #FF0000FF">
+        <div *ngIf="registerForm.get('cityName')?.hasError('required')">
+          Şehir zorunludur
+          <i class="fa-regular fa-circle-xmark"></i>
+        </div>
+      </div>
+
+      <div *ngIf="registerForm.get('cityName').valid" style="color: #319831">
+        <div *ngIf="registerForm.get('cityName')?.dirty">
+          Başarılı
+          <i class="fa-solid fa-check"></i>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-md-2">
+      <label class="form-label">Cinsiyet</label>
+      <div class="input-group has-validation">
+        <span class="input-group-text">
+          <i class="fa-sharp fa-solid fa-venus-mars"></i>
+        </span>
+        <select formControlName="gender"
+                class="form-select"
+                aria-describedby="validationServer04Feedback"
+                required>
+          <option selected value="">Cinsiyetiniz...</option>
+          <option *ngFor="let cinsiyet of genders"> {{cinsiyet.gender}} </option>
+        </select>
+      </div>
+
+      <div *ngIf="registerForm.get('gender').touched && registerForm.get('gender').invalid" style="color: #FF0000FF">
+        <div *ngIf="registerForm.get('gender')?.hasError('required')">
+          Cinsiyet Zorunludur
+          <i class="fa-regular fa-circle-xmark"></i>
+        </div>
+      </div>
+
+      <div *ngIf="registerForm.get('gender').valid" style="color: #319831">
+        <div *ngIf="registerForm.get('gender')?.dirty">
+          Başarılı
+          <i class="fa-solid fa-check"></i>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="col-md-2">
+      <label for="validationServer05" class="form-label">Telefon No:</label>
+      <div class="input-group has-validation">
+        <span class="input-group-text" id="inputGroupPrepen1">+90</span>
+        <input formControlName="telephoneNo"
+               type="text"
+               class="form-control"
+               id="validationServer05"
+               aria-describedby="validationServer05Feedback"
+               placeholder="xxx-xxx-xx-xx"
+               maxlength="10"
+               (keypress)="onlyNumberKey($event)">
+      </div>
+
+      <div *ngIf="registerForm.get('telephoneNo').touched && registerForm.get('telephoneNo').invalid"
+           style="color: #FF0000FF">
+        <div *ngIf="registerForm.get('telephoneNo')?.hasError('required')">
+          Telefon numarası zorunludur
+          <i class="fa-regular fa-circle-xmark"></i>
+        </div>
+      </div>
+
+
+      <div *ngIf="registerForm.get('telephoneNo').valid" style="color: #319831">
+        <div *ngIf="registerForm.get('telephoneNo')?.dirty">
+          Başarılı
+          <i class="fa-solid fa-check"></i>
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="col-md-2">
+      <label for="email" class="form-label">E-mail</label>
+      <div class="input-group has-validation">
+        <span class="input-group-text">
+          <i class="fa-solid fa-envelope"></i>
+        </span>
+        <input formControlName="email"
+               type="email"
+               class="form-control"
+               id="email"
+               placeholder="Email adresi giriniz">
+      </div>
+
+
+      <div *ngIf="registerForm.get('email').touched && registerForm.get('email').invalid" style="color: #FF0000FF">
+        <div *ngIf="registerForm.get('email')?.hasError('required')">
+          E-mail zorunludur
+          <i class="fa-regular fa-circle-xmark"></i>
+        </div>
+
+        <div *ngIf="registerForm.get('email')?.hasError('email')">
+          Lutfen Doğru Format Giriniz
+          <i class="fa-regular fa-circle-xmark"></i>
+        </div>
+
+        <div *ngIf="registerForm.get('email')?.hasError('email')">
+          Bu Email zaten kullanılıyor
+        </div>
+
+      </div>
+
+
+      <div *ngIf="registerForm.get('email').valid" style="color: #319831">
+        <div *ngIf="registerForm.get('email')?.dirty">
+          Başarılı
+          <i class="fa-solid fa-check"></i>
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="col-md-3">
+      <label class="form-label">Şifre</label>
+      <div class="input-group has-validation">
+        <span class="input-group-text">
+        <i class="fa-solid fa-lock"></i>
+        </span>
+        <input
+          formControlName="password"
+          type="password"
+          class="form-control"
+          value=""
+          placeholder="Şifrenizi giriniz">
+      </div>
+
+
+      <div *ngIf="(registerForm.get('password').touched ||submitted) && registerForm.get('password').invalid"
+           style="color: #FF0000FF">
+
+        <div *ngIf="registerForm.get('password')?.hasError('required')">
+          Şifre zorunludur
+          <i class="fa-regular fa-circle-xmark"></i>
+        </div>
+        <div *ngIf="registerForm.get('password')?.hasError('minlength')">
+          En az 8 karakter
+          <i class="fa-regular fa-circle-xmark"></i>
+        </div>
+        <div *ngIf="registerForm.get('password')?.hasError('pattern')">
+          En az 1 sayı ve en az 1 karakter olmalı
+          <i class="fa-regular fa-circle-xmark"></i>
+        </div>
+
+      </div>
+
+      <div *ngIf="registerForm.get('password').valid" style="color: #319831">
+        <div *ngIf="registerForm.get('password')?.dirty">
+          Başarılı
+          <i class="fa-solid fa-check"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <label class="form-label">Şifre Tekrarı</label>
+      <div class="input-group has-validation">
+        <span class="input-group-text">
+        <i class="fa-solid fa-lock"></i>
+        </span>
+        <input
+          formControlName="confirmPassword"
+          type="password"
+          class="form-control"
+          value=""
+          placeholder="Şifrenizi doğrulayın">
+      </div>
+
+      <div
+        *ngIf="(registerForm.get('confirmPassword').touched || submitted) && registerForm.get('confirmPassword').invalid"
+        style="color: #FF0000FF">
+        <div *ngIf="registerForm.get('confirmPassword')?.hasError('required')">
+          Şifre tekrarı zorunludur
+          <i class="fa-regular fa-circle-xmark"></i>
+        </div>
+        <div class="text-danger" *ngIf="passwordMatchError">
+          Şifre ve Doğrulama Şifresi aynı olmalı
+          <i class="fa-regular fa-circle-xmark"></i>
+        </div>
+        <div *ngIf="registerForm.get('confirmPassword')?.hasError('minlength')">
+          En az 8 karakter
+          <i class="fa-regular fa-circle-xmark"></i>
+        </div>
+      </div>
+
+      <div *ngIf="registerForm.get('confirmPassword').valid" style="color: #319831">
+        <div *ngIf="registerForm.get('confirmPassword')?.dirty">
+          Başarılı
+          <i class="fa-solid fa-check"></i>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-12">
+      <div class="form-check">
+        <input class="form-check-input"
+               formControlName="acceptTerms"
+               type="checkbox" value=""
+               aria-describedby="invalidCheck3Feedback" required>
+        <label class="form-check-label">Şart ve koşulları kabul ediyorum.</label>
+
+        <div *ngIf="registerForm.get('acceptTerms').touched && registerForm.get('acceptTerms').invalid"
+             style="color: #FF0000FF">
+          <div *ngIf="registerForm.get('acceptTerms')?.hasError('required')">
+            Onaylamak zorundasın
+            <i class="fa-regular fa-circle-xmark"></i>
+          </div>
+        </div>
+
+        <div *ngIf="registerForm.get('acceptTerms').valid" style="color: #319831">
+          <div *ngIf="registerForm.get('acceptTerms')?.dirty">
+            Onaylandı
+            <i class="fa-solid fa-check"></i>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="col-12">
+      <button class="btn btn-warning"
+              type="submit"
+              [disabled]="registerForm.invalid"
+              (click)="onSubmit()"
+      >
+        ÜYE OL
+      </button>
+    </div>
+
+  </form>
+</div>

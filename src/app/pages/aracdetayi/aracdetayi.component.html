@@ -1,0 +1,103 @@
+<div class="container">
+  <div class="row">
+    <div class="col-6">
+      <section class="gallery">
+        <div class="container">
+          <div class="img-container mt-5" *ngIf="car">
+            <img src="{{car[0].imageUrl}}" alt="Image" id="preview">
+                        <div class="img-prev text-center">
+                          <div class="img-slide active">
+                            <img src="{{car[0].imageData[0].image}}" alt="Image1" appDemo>
+                          </div>
+                          <div class="img-slide">
+                            <img src="{{car[0].imageData[1].image}}" alt="Image2" appDemo>
+                          </div>
+                          <div class="img-slide">
+                            <img src="{{car[0].imageData[2].image}}" alt="Image3" appDemo>
+                          </div>
+                          <div class="img-slide">
+                            <img src="{{car[0].imageData[3].image}}" alt="Image4" appDemo>
+                          </div>
+                        </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="col-3">
+      <div class="card mt-5">
+        <div class="userlist" *ngIf="car">
+          <div class="row">
+            <div class="solliste col-6">
+              <p class="userName">Kullanıcı Adı: </p>
+              <hr>
+              <p class="firstName">Ad:</p>
+              <hr>
+              <p class="lastName">Soyad:</p>
+              <hr>
+              <p class="email">Email: </p>
+              <hr>
+              <p class="telephoneNo">Telefon No:</p>
+              <hr>
+              <p class="Şehir">Şehir:</p>
+            </div>
+            <div class="sagliste col-6">
+              <p>{{car[0].userName}}</p>
+              <hr>
+              <p>{{car[0].firstName}}</p>
+              <hr>
+              <p>{{car[0].lastName}}</p>
+              <hr>
+              <p>{{car[0].email}}</p>
+              <hr>
+              <p>{{car[0].telephoneNo}}</p>
+              <hr>
+              <p>{{car[0].cityName}}</p>
+              <hr>
+            </div>
+          </div>
+        </div>
+      </div>
+      <table style="width:100%" class="carlist mt-3" *ngIf="car">
+        <tr>
+          <th>Durum</th>
+          <td>{{car[0].state}}</td>
+        </tr>
+        <tr>
+          <th>Marka</th>
+          <td>{{car[0].category}}</td>
+        </tr>
+        <tr>
+          <th>Model</th>
+          <td>{{car[0].model}}</td>
+        </tr>
+        <tr>
+          <th>Yıl</th>
+          <td>{{car[0].year}}</td>
+        </tr>
+        <tr>
+          <th>Renk</th>
+          <td>{{car[0].color}}</td>
+        </tr>
+        <tr>
+          <th>Kilometre</th>
+          <td>{{car[0].km}}</td>
+        </tr>
+        <tr>
+          <th>Motor Gücü</th>
+          <td>{{car[0].engine_power}}</td>
+        </tr>
+        <tr>
+          <th>Motor Hacmi</th>
+          <td>{{car[0].engine_volume}}</td>
+        </tr>
+        <tr>
+          <th>Fiyat</th>
+          <td>{{car[0].price}}</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+
+

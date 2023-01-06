@@ -1,0 +1,1380 @@
+{
+  "users": [
+    {
+      "firstName": "İsa",
+      "lastName": "Çolakoğlu",
+      "userName": "isacolak",
+      "cityName": "Ankara",
+      "gender": "Erkek",
+      "telephoneNo": "5465222828",
+      "email": "isa@admin.com",
+      "password": "isa12345",
+      "confirmPassword": "isa12345",
+      "acceptTerms": true,
+      "returnSecureToken": true,
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaXJzdE5hbWUiOiLEsHNhIiwibGFzdE5hbWUiOiLDh29sYWtvxJ9sdSIsInVzZXJOYW1lIjoiaXNhY29sYWsiLCJjaXR5TmFtZSI6IkFua2FyYSIsImdlbmRlciI6IkVya2VrIiwidGVsZXBob25lTm8iOiI1NDY1MjIyODI4IiwiZW1haWwiOiJpc2FAYWRtaW4uY29tIiwicGFzc3dvcmQiOiJpc2ExMjM0NSIsImNvbmZpcm1QYXNzd29yZCI6ImlzYTEyMzQ1IiwiYWNjZXB0VGVybXMiOnRydWUsInJldHVyblNlY3VyZVRva2VuIjp0cnVlLCJ0b2tlbiI6ImFkbWluX3Rva2VuIiwicm9sZSI6ImFkbWluIiwiaWQiOjF9.uSc7YiHZGIotExq81us9rtZ1fomQeDrBE46XYppWzIY",
+      "role": "admin",
+      "id": 1
+    },
+    {
+      "firstName": "İsa",
+      "lastName": "Çolakoğlu",
+      "userName": "isacolak",
+      "cityName": "Çorum",
+      "gender": "Erkek",
+      "telephoneNo": "5465222828",
+      "email": "isa@test.com",
+      "password": "isa12345",
+      "confirmPassword": "isa12345",
+      "acceptTerms": true,
+      "returnSecureToken": true,
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+      "role": "user",
+      "id": 2
+    },
+    {
+      "firstName": "Eren",
+      "lastName": "Çolakoğlu",
+      "userName": "erencolak",
+      "cityName": "Ankara",
+      "gender": "Erkek",
+      "telephoneNo": "5465222828",
+      "email": "isa@abc.com",
+      "password": "isa12345",
+      "confirmPassword": "isa12345",
+      "acceptTerms": true,
+      "returnSecureToken": true,
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+      "role": "user",
+      "id": 3
+    },
+    {
+      "firstName": "İsa",
+      "lastName": "Çolakoğlu",
+      "userName": "isacolak",
+      "cityName": "Isparta",
+      "gender": "Erkek",
+      "telephoneNo": "5465222828",
+      "email": "isa@abcd.com",
+      "password": "isa123456",
+      "confirmPassword": "isa123456",
+      "acceptTerms": true,
+      "returnSecureToken": true,
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+      "role": "user",
+      "id": 4
+    },
+    {
+      "firstName": "Eren",
+      "lastName": "Çolakoğlu",
+      "userName": "erencolak2828",
+      "cityName": "Ankara",
+      "gender": "Erkek",
+      "telephoneNo": "5465222828",
+      "email": "eren@test.com",
+      "password": "eren12345",
+      "confirmPassword": "eren12345",
+      "acceptTerms": true,
+      "returnSecureToken": true,
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+      "role": "user",
+      "id": 5
+    },
+    {
+      "firstName": "Mehmet",
+      "lastName": "Mehmet",
+      "userName": "mehmet",
+      "cityName": "Ağrı",
+      "gender": "Erkek",
+      "telephoneNo": "5465222828",
+      "email": "mehmet@test.com",
+      "password": "mehmet12345",
+      "confirmPassword": "mehmet12345",
+      "acceptTerms": true,
+      "returnSecureToken": true,
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+      "role": "user",
+      "id": 6
+    },
+    {
+      "firstName": "Eren",
+      "lastName": "ÇOLAKOĞLU",
+      "userName": "Erencolak28",
+      "cityName": "Giresun",
+      "gender": "Erkek",
+      "telephoneNo": "5462322828",
+      "email": "eren@abc.com",
+      "password": "eren12345",
+      "confirmPassword": "eren12345",
+      "acceptTerms": true,
+      "returnSecureToken": true,
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+      "role": "user",
+      "id": 7
+    },
+    {
+      "firstName": "Burak",
+      "lastName": "Sandıraz",
+      "userName": "Burak06",
+      "cityName": "Ankara",
+      "gender": "Erkek",
+      "telephoneNo": "1231231231",
+      "email": "burak@test.com",
+      "password": "burak12345",
+      "confirmPassword": "burak12345",
+      "acceptTerms": true,
+      "returnSecureToken": true,
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+      "role": "user",
+      "id": 8
+    }
+  ],
+  "cities": [
+    {
+      "id": 1,
+      "name": "Adana"
+    },
+    {
+      "id": 2,
+      "name": "Adıyaman"
+    },
+    {
+      "id": 3,
+      "name": "Afyonkarahisar"
+    },
+    {
+      "id": 4,
+      "name": "Ağrı"
+    },
+    {
+      "id": 5,
+      "name": "Amasya"
+    },
+    {
+      "id": 6,
+      "name": "Ankara"
+    },
+    {
+      "id": 7,
+      "name": "Antalya"
+    },
+    {
+      "id": 8,
+      "name": "Artvin"
+    },
+    {
+      "id": 9,
+      "name": "Aydın"
+    },
+    {
+      "id": 10,
+      "name": "Balıkesir"
+    },
+    {
+      "id": 11,
+      "name": "Bilecik"
+    },
+    {
+      "id": 12,
+      "name": "Bingöl"
+    },
+    {
+      "id": 13,
+      "name": "Bitlis"
+    },
+    {
+      "id": 14,
+      "name": "Bolu"
+    },
+    {
+      "id": 15,
+      "name": "Burdur"
+    },
+    {
+      "id": 16,
+      "name": "Bursa"
+    },
+    {
+      "id": 17,
+      "name": "Çanakkale"
+    },
+    {
+      "id": 18,
+      "name": "Çankırı"
+    },
+    {
+      "id": 19,
+      "name": "Çorum"
+    },
+    {
+      "id": 20,
+      "name": "Denizli"
+    },
+    {
+      "id": 21,
+      "name": "Diyarbakır"
+    },
+    {
+      "id": 22,
+      "name": "Edirne"
+    },
+    {
+      "id": 23,
+      "name": "Elâzığ"
+    },
+    {
+      "id": 24,
+      "name": "Erzincan"
+    },
+    {
+      "id": 25,
+      "name": "Erzurum"
+    },
+    {
+      "id": 26,
+      "name": "Eskişehir"
+    },
+    {
+      "id": 27,
+      "name": "Gaziantep"
+    },
+    {
+      "id": 28,
+      "name": "Giresun"
+    },
+    {
+      "id": 29,
+      "name": "Gümüşhane"
+    },
+    {
+      "id": 30,
+      "name": "Hakkâri"
+    },
+    {
+      "id": 31,
+      "name": "Hatay"
+    },
+    {
+      "id": 32,
+      "name": "Isparta"
+    },
+    {
+      "id": 33,
+      "name": "Mersin"
+    },
+    {
+      "id": 34,
+      "name": "İstanbul"
+    },
+    {
+      "id": 35,
+      "name": "İzmir"
+    },
+    {
+      "id": 36,
+      "name": "Kars"
+    },
+    {
+      "id": 37,
+      "name": "Kastamonu"
+    },
+    {
+      "id": 38,
+      "name": "Kayseri"
+    },
+    {
+      "id": 39,
+      "name": "Kırklareli"
+    },
+    {
+      "id": 40,
+      "name": "Kırşehir"
+    },
+    {
+      "id": 41,
+      "name": "Kocaeli"
+    },
+    {
+      "id": 42,
+      "name": "Konya"
+    },
+    {
+      "id": 43,
+      "name": "Kütahya"
+    },
+    {
+      "id": 44,
+      "name": "Malatya"
+    },
+    {
+      "id": 45,
+      "name": "Manisa"
+    },
+    {
+      "id": 46,
+      "name": "Kahramanmaraş"
+    },
+    {
+      "id": 47,
+      "name": "Mardin"
+    },
+    {
+      "id": 48,
+      "name": "Muğla"
+    },
+    {
+      "id": 49,
+      "name": "Muş"
+    },
+    {
+      "id": 50,
+      "name": "Nevşehir"
+    },
+    {
+      "id": 51,
+      "name": "Niğde"
+    },
+    {
+      "id": 52,
+      "name": "Ordu"
+    },
+    {
+      "id": 53,
+      "name": "Rize"
+    },
+    {
+      "id": 54,
+      "name": "Sakarya"
+    },
+    {
+      "id": 55,
+      "name": "Samsun"
+    },
+    {
+      "id": 56,
+      "name": "Siirt"
+    },
+    {
+      "id": 57,
+      "name": "Sinop"
+    },
+    {
+      "id": 58,
+      "name": "Sivas"
+    },
+    {
+      "id": 59,
+      "name": "Tekirdağ"
+    },
+    {
+      "id": 60,
+      "name": "Tokat"
+    },
+    {
+      "id": 61,
+      "name": "Trabzon"
+    },
+    {
+      "id": 62,
+      "name": "Tunceli"
+    },
+    {
+      "id": 63,
+      "name": "Şanlıurfa"
+    },
+    {
+      "id": 64,
+      "name": "Uşak"
+    },
+    {
+      "id": 65,
+      "name": "Van"
+    },
+    {
+      "id": 66,
+      "name": "Yozgat"
+    },
+    {
+      "id": 67,
+      "name": "Zonguldak"
+    },
+    {
+      "id": 68,
+      "name": "Aksaray"
+    },
+    {
+      "id": 69,
+      "name": "Bayburt"
+    },
+    {
+      "id": 70,
+      "name": "Karaman"
+    },
+    {
+      "id": 71,
+      "name": "Kırıkkale"
+    },
+    {
+      "id": 72,
+      "name": "Batman"
+    },
+    {
+      "id": 73,
+      "name": "Şırnak"
+    },
+    {
+      "id": 74,
+      "name": "Bartın"
+    },
+    {
+      "id": 75,
+      "name": "Ardahan"
+    },
+    {
+      "id": 76,
+      "name": "Iğdır"
+    },
+    {
+      "id": 77,
+      "name": "Yalova"
+    },
+    {
+      "id": 78,
+      "name": "Karabük"
+    },
+    {
+      "id": 79,
+      "name": "Kilis"
+    },
+    {
+      "id": 80,
+      "name": "Osmaniye"
+    },
+    {
+      "id": 81,
+      "name": "Düzce"
+    }
+  ],
+  "genders": [
+    {
+      "id": 1,
+      "gender": "Erkek"
+    },
+    {
+      "id": 2,
+      "gender": "Kadın"
+    }
+  ],
+  "states": [
+    {
+      "id": 0,
+      "state": "Satılık"
+    },
+    {
+      "id": 1,
+      "state": "Kiralık"
+    },
+    {
+      "id": 2,
+      "state": "Talep"
+    },
+    {
+      "id": 3,
+      "state": "Hepsi"
+    }
+  ],
+  "colors": [
+    {
+      "id": 0,
+      "name": "Siyah"
+    },
+    {
+      "id": 1,
+      "name": "Beyaz"
+    },
+    {
+      "id": 2,
+      "name": "Kırmızı"
+    },
+    {
+      "id": 3,
+      "name": "Sarı"
+    },
+    {
+      "id": 4,
+      "name": "Lacivert"
+    },
+    {
+      "id": 5,
+      "name": "Mavi"
+    },
+    {
+      "id": 6,
+      "name": "Yeşil"
+    },
+    {
+      "id": 7,
+      "name": "Gri"
+    },
+    {
+      "id": 8,
+      "name": "Bej"
+    },
+    {
+      "id": 9,
+      "name": "Mor"
+    },
+    {
+      "id": 10,
+      "name": "Bordo"
+    }
+  ],
+  "years": [
+    {
+      "id": 0,
+      "year": "2000"
+    },
+    {
+      "id": 1,
+      "year": "2001"
+    },
+    {
+      "id": 2,
+      "year": "2002"
+    },
+    {
+      "id": 3,
+      "year": "2003"
+    },
+    {
+      "id": 4,
+      "year": "2004"
+    },
+    {
+      "id": 5,
+      "year": "2005"
+    },
+    {
+      "id": 6,
+      "year": "2006"
+    },
+    {
+      "id": 7,
+      "year": "2007"
+    },
+    {
+      "id": 8,
+      "year": "2008"
+    },
+    {
+      "id": 9,
+      "year": "2009"
+    },
+    {
+      "id": 10,
+      "year": "2010"
+    },
+    {
+      "id": 11,
+      "year": "2011"
+    },
+    {
+      "id": 12,
+      "year": "2012"
+    },
+    {
+      "id": 13,
+      "year": "2013"
+    },
+    {
+      "id": 14,
+      "year": "2014"
+    },
+    {
+      "id": 15,
+      "year": "2015"
+    },
+    {
+      "id": 16,
+      "year": "2016"
+    },
+    {
+      "id": 17,
+      "year": "2017"
+    },
+    {
+      "id": 18,
+      "year": "2018"
+    },
+    {
+      "id": 19,
+      "year": "2019"
+    },
+    {
+      "id": 20,
+      "year": "2020"
+    },
+    {
+      "id": 21,
+      "year": "2021"
+    },
+    {
+      "id": 22,
+      "year": "2022"
+    }
+  ],
+  "categories": [
+    {
+      "id": 0,
+      "name": "Alfa Romeo",
+      "models": [
+        {
+          "Subid": 0,
+          "model": "Giulia"
+        },
+        {
+          "Subid": 1,
+          "model": "Giulietta"
+        },
+        {
+          "Subid": 2,
+          "model": "Brera"
+        },
+        {
+          "Subid": 3,
+          "model": "Spider"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Audi",
+      "models": [
+        {
+          "Subid": 0,
+          "model": "A4"
+        },
+        {
+          "Subid": 1,
+          "model": "A5"
+        },
+        {
+          "Subid": 2,
+          "model": "A6"
+        },
+        {
+          "Subid": 3,
+          "model": "A7"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Bmw",
+      "models": [
+        {
+          "Subid": 0,
+          "model": "3 Serisi"
+        },
+        {
+          "Subid": 1,
+          "model": "5 Serisi"
+        },
+        {
+          "Subid": 2,
+          "model": "M Serisi"
+        },
+        {
+          "Subid": 3,
+          "model": "Z Serisi"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Cadillac",
+      "models": [
+        {
+          "Subid": 0,
+          "model": "DeVille"
+        },
+        {
+          "Subid": 1,
+          "model": "Eldorado"
+        },
+        {
+          "Subid": 2,
+          "model": "Fleetwood"
+        },
+        {
+          "Subid": 3,
+          "model": "Seville"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Chevrolet",
+      "models": [
+        {
+          "Subid": 0,
+          "model": "Camaro"
+        },
+        {
+          "Subid": 1,
+          "model": "Corvette"
+        },
+        {
+          "Subid": 2,
+          "model": "Cruze"
+        },
+        {
+          "Subid": 3,
+          "model": "Epica"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Dacia",
+      "models": [
+        {
+          "Subid": 0,
+          "model": "Sandero"
+        },
+        {
+          "Subid": 1,
+          "model": "Logan"
+        },
+        {
+          "Subid": 2,
+          "model": "Lodgy"
+        },
+        {
+          "Subid": 3,
+          "model": "Solenza"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Fiat",
+      "models": [
+        {
+          "Subid": 0,
+          "model": "Egea"
+        },
+        {
+          "Subid": 1,
+          "model": "Linea"
+        },
+        {
+          "Subid": 2,
+          "model": "Punto"
+        },
+        {
+          "Subid": 3,
+          "model": "124 Spider"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Ford",
+      "models": [
+        {
+          "Subid": 0,
+          "model": "Focus"
+        },
+        {
+          "Subid": 1,
+          "model": "Fiesta"
+        },
+        {
+          "Subid": 2,
+          "model": "Mustang"
+        },
+        {
+          "Subid": 3,
+          "model": "Escort"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Honda",
+      "models": [
+        {
+          "Subid": 0,
+          "model": "Civic"
+        },
+        {
+          "Subid": 1,
+          "model": "Accord"
+        },
+        {
+          "Subid": 2,
+          "model": "S2000"
+        },
+        {
+          "Subid": 3,
+          "model": "Jazz"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Hyundai",
+      "models": [
+        {
+          "Subid": 0,
+          "model": "Accent"
+        },
+        {
+          "Subid": 1,
+          "model": "Accent Blue"
+        },
+        {
+          "Subid": 2,
+          "model": "Accent Era"
+        },
+        {
+          "Subid": 3,
+          "model": "Elantra"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Mazda",
+      "models": [
+        {
+          "Subid": 0,
+          "model": "Lantis"
+        },
+        {
+          "Subid": 1,
+          "model": "RX"
+        },
+        {
+          "Subid": 2,
+          "model": "MX"
+        },
+        {
+          "Subid": 3,
+          "model": "Xedos"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Mercedes-Benz",
+      "models": [
+        {
+          "Subid": 0,
+          "model": "A Serisi"
+        },
+        {
+          "Subid": 1,
+          "model": "AMG GT"
+        },
+        {
+          "Subid": 2,
+          "model": "C Serisi"
+        },
+        {
+          "Subid": 3,
+          "model": "E Serisi"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Nissan",
+      "models": [
+        {
+          "Subid": 0,
+          "model": "GT-R"
+        },
+        {
+          "Subid": 1,
+          "model": "350 Z"
+        },
+        {
+          "Subid": 2,
+          "model": "200 SX"
+        },
+        {
+          "Subid": 3,
+          "model": "Micra"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Opel",
+      "models": [
+        {
+          "Subid": 0,
+          "model": "Astra"
+        },
+        {
+          "Subid": 1,
+          "model": "Insignia"
+        },
+        {
+          "Subid": 2,
+          "model": "Vectra"
+        },
+        {
+          "Subid": 3,
+          "model": "Corsa"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Peugeot",
+      "models": [
+        {
+          "Subid": 0,
+          "model": "106"
+        },
+        {
+          "Subid": 1,
+          "model": "206"
+        },
+        {
+          "Subid": 2,
+          "model": "301"
+        },
+        {
+          "Subid": 3,
+          "model": "RCZ"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Seat",
+      "models": [
+        {
+          "Subid": 0,
+          "model": "Altea"
+        },
+        {
+          "Subid": 1,
+          "model": "Ibiza"
+        },
+        {
+          "Subid": 2,
+          "model": "Leon"
+        },
+        {
+          "Subid": 3,
+          "model": "Toledo"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Skoda",
+      "models": [
+        {
+          "Subid": 0,
+          "model": "Fabia"
+        },
+        {
+          "Subid": 1,
+          "model": "Octavia"
+        },
+        {
+          "Subid": 2,
+          "model": "Rapid"
+        },
+        {
+          "Subid": 3,
+          "model": "Superb"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Tofaş",
+      "models": [
+        {
+          "Subid": 0,
+          "model": "Doğan"
+        },
+        {
+          "Subid": 1,
+          "model": "Kartal"
+        },
+        {
+          "Subid": 2,
+          "model": "Şahin"
+        },
+        {
+          "Subid": 3,
+          "model": "Serçe"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Toyota",
+      "models": [
+        {
+          "Subid": 0,
+          "model": "Auris"
+        },
+        {
+          "Subid": 1,
+          "model": "Avensis"
+        },
+        {
+          "Subid": 2,
+          "model": "Corolla"
+        },
+        {
+          "Subid": 3,
+          "model": "Yaris"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Volkswagen",
+      "models": [
+        {
+          "Subid": 0,
+          "model": "Arteon"
+        },
+        {
+          "Subid": 1,
+          "model": "Jetta"
+        },
+        {
+          "Subid": 2,
+          "model": "Passat"
+        },
+        {
+          "Subid": 3,
+          "model": "Polo"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Volvo",
+      "models": [
+        {
+          "Subid": 0,
+          "model": "S60"
+        },
+        {
+          "Subid": 1,
+          "model": "S90"
+        },
+        {
+          "Subid": 2,
+          "model": "V60 Cross Country"
+        },
+        {
+          "Subid": 3,
+          "model": "V90 Cross Country"
+        }
+      ]
+    }
+  ],
+  "cars": [
+    {
+      "state": "Satılık",
+      "category": "Bmw",
+      "model": "M Serisi",
+      "year": "2021",
+      "color": "Bej",
+      "description": "qweqweqwe qwe qw qw",
+      "km": 62835,
+      "engine_power": 241,
+      "engine_volume": 2060,
+      "imageUrl": "https://i0.shbdn.com/photos/92/62/70/lthmb_1050926270oo1.jpg",
+      "price": "₺11,950,000",
+      "firstName": "İsa",
+      "lastName": "Çolakoğlu",
+      "userName": "isacolak",
+      "email": "isa@test.com",
+      "telephoneNo": "5465222828",
+      "cityName": "Çorum",
+      "id": 1
+    },
+    {
+      "state": "Talep",
+      "category": "Audi",
+      "model": "A6",
+      "year": "2018",
+      "color": "Lacivert",
+      "description": "adqe qwe 13 12 qweq ",
+      "km": 26820,
+      "engine_power": 407,
+      "engine_volume": 1696,
+      "imageUrl": "https://i0.shbdn.com/photos/35/77/50/lthmb_1071357750nro.jpg",
+      "price": "₺11,950,000",
+      "firstName": "İsa",
+      "lastName": "Çolakoğlu",
+      "userName": "isacolak",
+      "email": "isa@test.com",
+      "telephoneNo": "5465222828",
+      "cityName": "Çorum",
+      "id": 2
+    },
+    {
+      "state": "Kiralık",
+      "category": "Bmw",
+      "model": "M Serisi",
+      "year": "2014",
+      "color": "Sarı",
+      "description": "GVN MOTORSDAN 2014 M4 BAYİ LCİ HEADUP+FREN+20JANT",
+      "km": 59218,
+      "engine_power": 215,
+      "engine_volume": 1733,
+      "imageUrl": "https://i0.shbdn.com/photos/34/00/83/x5_1066340083k0t.jpg",
+      "imageData": [
+        {
+          "id": 1,
+          "image": "https://i0.shbdn.com/photos/34/00/83/x5_1066340083k0t.jpg"
+        },
+        {
+          "id": 2,
+          "image": "https://i0.shbdn.com/photos/34/00/83/x5_10663400830cc.jpg"
+        },
+        {
+          "id": 3,
+          "image": "https://i0.shbdn.com/photos/34/00/83/x5_1066340083av9.jpg"
+        },
+        {
+          "id": 4,
+          "image": "https://i0.shbdn.com/photos/34/00/83/x5_1066340083tu9.jpg"
+        }
+      ],
+      "price": "₺3,250,000",
+      "firstName": "Eren",
+      "lastName": "Çolakoğlu",
+      "userName": "erencolak2828",
+      "email": "eren@test.com",
+      "telephoneNo": "5465222828",
+      "cityName": "Ankara",
+      "id": 3
+    },
+    {
+      "state": "Kiralık",
+      "category": "Bmw",
+      "model": "M Serisi",
+      "year": "2014",
+      "color": "Sarı",
+      "description": "GVN MOTORSDAN 2014 M4 BAYİ LCİ HEADUP+FREN+20JANT",
+      "km": 59218,
+      "engine_power": 215,
+      "engine_volume": 1733,
+      "imageUrl": "https://i0.shbdn.com/photos/34/00/83/x5_1066340083k0t.jpg",
+      "imageData": [
+        {
+          "id": 1,
+          "image": "https://i0.shbdn.com/photos/34/00/83/x5_1066340083k0t.jpg"
+        },
+        {
+          "id": 2,
+          "image": "https://i0.shbdn.com/photos/34/00/83/x5_10663400830cc.jpg"
+        },
+        {
+          "id": 3,
+          "image": "https://i0.shbdn.com/photos/34/00/83/x5_1066340083av9.jpg"
+        },
+        {
+          "id": 4,
+          "image": "https://i0.shbdn.com/photos/34/00/83/x5_1066340083tu9.jpg"
+        }
+      ],
+      "price": "₺3,250,000",
+      "firstName": "Eren",
+      "lastName": "Çolakoğlu",
+      "userName": "erencolak2828",
+      "email": "eren@test.com",
+      "telephoneNo": "5465222828",
+      "cityName": "Ankara",
+      "id": 4
+    },
+    {
+      "state": "Kiralık",
+      "category": "Bmw",
+      "model": "M Serisi",
+      "year": "2014",
+      "color": "Sarı",
+      "description": "GVN MOTORSDAN 2014 M4 BAYİ LCİ HEADUP+FREN+20JANT",
+      "km": 59218,
+      "engine_power": 215,
+      "engine_volume": 1733,
+      "imageUrl": "https://i0.shbdn.com/photos/34/00/83/x5_1066340083k0t.jpg",
+      "imageData": [
+        {
+          "id": 1,
+          "image": "https://i0.shbdn.com/photos/34/00/83/x5_1066340083k0t.jpg"
+        },
+        {
+          "id": 2,
+          "image": "https://i0.shbdn.com/photos/34/00/83/x5_10663400830cc.jpg"
+        },
+        {
+          "id": 3,
+          "image": "https://i0.shbdn.com/photos/34/00/83/x5_1066340083av9.jpg"
+        },
+        {
+          "id": 4,
+          "image": "https://i0.shbdn.com/photos/34/00/83/x5_1066340083tu9.jpg"
+        }
+      ],
+      "price": "₺3,250,000",
+      "firstName": "Eren",
+      "lastName": "Çolakoğlu",
+      "userName": "erencolak2828",
+      "email": "eren@test.com",
+      "telephoneNo": "5465222828",
+      "cityName": "Ankara",
+      "id": 5
+    },
+    {
+      "state": "Kiralık",
+      "category": "Bmw",
+      "model": "M Serisi",
+      "year": "2014",
+      "color": "Sarı",
+      "description": "GVN MOTORSDAN 2014 M4 BAYİ LCİ HEADUP+FREN+20JANT",
+      "km": 59218,
+      "engine_power": 215,
+      "engine_volume": 1733,
+      "imageUrl": "https://i0.shbdn.com/photos/34/00/83/x5_1066340083k0t.jpg",
+      "imageData": [
+        {
+          "id": 1,
+          "image": "https://i0.shbdn.com/photos/34/00/83/x5_1066340083k0t.jpg"
+        },
+        {
+          "id": 2,
+          "image": "https://i0.shbdn.com/photos/34/00/83/x5_10663400830cc.jpg"
+        },
+        {
+          "id": 3,
+          "image": "https://i0.shbdn.com/photos/34/00/83/x5_1066340083av9.jpg"
+        },
+        {
+          "id": 4,
+          "image": "https://i0.shbdn.com/photos/34/00/83/x5_1066340083tu9.jpg"
+        }
+      ],
+      "price": "₺3,250,000",
+      "firstName": "Eren",
+      "lastName": "Çolakoğlu",
+      "userName": "erencolak2828",
+      "email": "eren@test.com",
+      "telephoneNo": "5465222828",
+      "cityName": "Ankara",
+      "id": 6
+    },
+    {
+      "state": "Kiralık",
+      "category": "Bmw",
+      "model": "M Serisi",
+      "year": "2014",
+      "color": "Sarı",
+      "description": "GVN MOTORSDAN 2014 M4 BAYİ LCİ HEADUP+FREN+20JANT",
+      "km": 59218,
+      "engine_power": 215,
+      "engine_volume": 1733,
+      "imageUrl": "https://i0.shbdn.com/photos/34/00/83/x5_1066340083k0t.jpg",
+      "imageData": [
+        {
+          "id": 1,
+          "image": "https://i0.shbdn.com/photos/34/00/83/x5_1066340083k0t.jpg"
+        },
+        {
+          "id": 2,
+          "image": "https://i0.shbdn.com/photos/34/00/83/x5_10663400830cc.jpg"
+        },
+        {
+          "id": 3,
+          "image": "https://i0.shbdn.com/photos/34/00/83/x5_1066340083av9.jpg"
+        },
+        {
+          "id": 4,
+          "image": "https://i0.shbdn.com/photos/34/00/83/x5_1066340083tu9.jpg"
+        }
+      ],
+      "price": "₺3,250,000",
+      "firstName": "Eren",
+      "lastName": "Çolakoğlu",
+      "userName": "erencolak2828",
+      "email": "eren@test.com",
+      "telephoneNo": "5465222828",
+      "cityName": "Ankara",
+      "id": 7
+    },
+    {
+      "state": "Kiralık",
+      "category": "Bmw",
+      "model": "M Serisi",
+      "year": "2014",
+      "color": "Sarı",
+      "description": "GVN MOTORSDAN 2014 M4 BAYİ LCİ HEADUP+FREN+20JANT",
+      "km": 59218,
+      "engine_power": 215,
+      "engine_volume": 1733,
+      "imageUrl": "https://i0.shbdn.com/photos/34/00/83/x5_1066340083k0t.jpg",
+      "imageData": [
+        {
+          "id": 1,
+          "image": "https://i0.shbdn.com/photos/34/00/83/x5_1066340083k0t.jpg"
+        },
+        {
+          "id": 2,
+          "image": "https://i0.shbdn.com/photos/34/00/83/x5_10663400830cc.jpg"
+        },
+        {
+          "id": 3,
+          "image": "https://i0.shbdn.com/photos/34/00/83/x5_1066340083av9.jpg"
+        },
+        {
+          "id": 4,
+          "image": "https://i0.shbdn.com/photos/34/00/83/x5_1066340083tu9.jpg"
+        }
+      ],
+      "price": "₺3,250,000",
+      "firstName": "Eren",
+      "lastName": "Çolakoğlu",
+      "userName": "erencolak2828",
+      "email": "eren@test.com",
+      "telephoneNo": "5465222828",
+      "cityName": "Ankara",
+      "id": 8
+    },
+    {
+      "state": "Satılık",
+      "category": "Mercedes-Benz",
+      "model": "C Serisi",
+      "year": "2016",
+      "color": "Siyah",
+      "description": "qweoıqweo  qwıe ow ıe oıqwo ıeoqwıe oeqwıqwoıeoqwe  qwoıeoqwıeqwe",
+      "km": 57173,
+      "engine_power": 254,
+      "engine_volume": 2702,
+      "imageUrl": "https://i0.shbdn.com/photos/92/62/70/lthmb_1050926270oo1.jpg",
+      "price": "₺1,500,000",
+      "firstName": "Burak",
+      "lastName": "Sandıraz",
+      "userName": "Burak06",
+      "email": "burak@test.com",
+      "telephoneNo": "1231231231",
+      "cityName": "Ankara",
+      "id": 9
+    }
+  ]
+}
